@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <meta data="Shift+Alt+F">
     <style>
-                @font-face {
+       
+        @font-face {
             font-family: 'Arial_Rounded_MT';
-            src: url('Arial_Rounded_MT.eot?#') format('eot'), /* IE6�8 */
-            url('Arial_Rounded_MT.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-            url('Arial_Rounded_MT.ttf') format('truetype'); /* Saf3�5, Chrome4+, FF3.5, Opera 10+ */
+            src: url('Arial_Rounded_MT.eot?#') format('eot'),
+                url('Arial_Rounded_MT.woff') format('woff'),/
+                url('Arial_Rounded_MT.ttf') format('truetype');
         }
-        
+
         body {
             font-family: "Arial_Rounded_MT";
             font-size: 20px;
@@ -34,18 +37,22 @@
             height: 100%;
         }
 
-.w650{
-width: 650px;
-}
+        .w650 {
+            width: 650px;
+        }
+
         .w325 {
             width: 325px;
         }
-.w50{
-    width: 50px;
-}
-        .w25{
+
+        .w50 {
+            width: 50px;
+        }
+
+        .w25 {
             width: 25px;
         }
+
         .h25 {
             height: 25px;
         }
@@ -55,251 +62,299 @@ width: 650px;
             height: auto;
         }
 
-        .table-features td{
+        .table-features td {
             padding-left: 10px;
             padding-right: 10px;
         }
 
         .dot {
-  height: 10px;
-  width: 10px;
-  background-color:  #3b2357;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.btn{
-color: #ffffff;
-background-color: #fcb515;
-padding: 10px 30px 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 25px;
-}
-
-.background-cyan{
-    background-color: #27bec8;
-}
-.background-purple{
-    background-color: #3b2357;
-}
-.text-white{
-    color: #ffffff;
-}
-.text-yellow{
-    color: #fdb415;
-}
-
-.socicon-table {
-    padding: 0 0 0 60%; 
+            height: 10px;
+            width: 10px;
+            background-color: #3b2357;
+            border-radius: 50%;
+            display: inline-block;
         }
 
-            .socicon-table td {
-                padding: 5px;
-            }
+        .btn {
+            color: #ffffff;
+            background-color: #fcb515;
+            padding: 10px 30px 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 25px;
+        }
+
+        .background-cyan {
+            background-color: #27bec8;
+        }
+
+        .background-purple {
+            background-color: #3b2357;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .text-yellow {
+            color: #fdb415;
+        }
+
+        .socicon-table {
+            padding: 0 0 0 60%;
+        }
+
+        .socicon-table td {
+            padding: 5px;
+        }
+
+        .bg-header {
+            width: 725px;
+            background-image: url(bg-header.png);
+            background-size: 100% 100%;
+        }
+        .bg-footer {
+            width: 725px;
+            background-image: url(bg-footer.png);
+            background-size: 100% 100%;
+        }
     </style>
 </head>
+
 <body>
     <div id="tableContainer-1">
         <div id="tableContainer-2">
-            <table style="margin-left: auto; margin-right: auto; background-color: #ffffff;" border="1" cellpading="0" cellspacing="0" align="center">
+            <table style="margin-left: auto; margin-right: auto; background-color: #ffffff;" border="1" cellpading="0"
+                cellspacing="0" align="center">
                 <tbody>
                     <!--header-->
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <!--/header-->
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w650" colspan="2" align="center">
-                        <p>
-                            Specialist <br> Property Management System
-                        </p>
-                        <table class="table-features">
-                            <tr>
-                                    <td align="center" class="w50">
-                                    &nbsp;
+                    <!--<tr  style="background-image:url(bg-header.png); background-repeat:repeat;">-->
+                    <tr class="bg-header">
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w325">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td valign="top">
+                                            <img class="responsive" src="logo.png" alt="logo" />
                                         </td>
-                                <td align="center">
-                                    <img class="responsive" src="feature-book.png" alt="feature-book"/>
-                                    <p>
-                                        Zeevou
-                                        <br/>
-                                        <b>Book</b>
-                                    </p>
-                                </td>
-                                <td align="center">
-                                        <img class="responsive" src="feature-channel.png" alt="feature-channels"/>
+                                        <td>
+                                            <img class="responsive" src="cloud.png" alt="cloud" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h2>The Hero</h2>
+                                            is back in town... !
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="w325">
+                            <img class="responsive" src="hero.png" alt="hero" />
+                        </td>
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
+                    <!--/header-->
+
+                    <tr>
+                        <td class="divider" colspan="4">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w650" colspan="2" align="center">
+                            <p>
+                                Specialist <br> Property Management System
+                            </p>
+                            <table class="table-features">
+                                <tr>
+                                    <td align="center" class="w50">
+                                        &nbsp;
+                                    </td>
+                                    <td align="center">
+                                        <img class="responsive" src="feature-book.png" alt="feature-book" />
                                         <p>
                                             Zeevou
-                                            <br/>
+                                            <br />
+                                            <b>Book</b>
+                                        </p>
+                                    </td>
+                                    <td align="center">
+                                        <img class="responsive" src="feature-channel.png" alt="feature-channels" />
+                                        <p>
+                                            Zeevou
+                                            <br />
                                             <b>Channels</b>
                                         </p>
                                     </td>
                                     <td align="center">
-                                            <img class="responsive" src="feature-channel.png" alt="feature-huts"/>
-                                            <p>
-                                                Zeevou
-                                                <br/>
-                                                <b>Huts</b>
-                                            </p>
-                                        </td>
-                                        <td align="center">
-                                                <img class="responsive" src="feature-pay.png" alt="feature-pay"/>
-                                                <p>
-                                                    Zeevou
-                                                    <br/>
-                                                    <b>Pay</b>
-                                                </p>
-                                            </td>
-                                            <td align="center">
-                                                    <img class="responsive" src="feature-cal.png" alt="feature-cal"/>
-                                                    <p>
-                                                        Zeevou
-                                                        <br/>
-                                                        <b>Cal</b>
-                                                    </p>
-                                                </td>
-                                                <td align="center" class="w50">
-                                                        &nbsp;
-                                                            </td>
-                            </tr>
-                        </table>
+                                        <img class="responsive" src="feature-channel.png" alt="feature-huts" />
+                                        <p>
+                                            Zeevou
+                                            <br />
+                                            <b>Huts</b>
+                                        </p>
+                                    </td>
+                                    <td align="center">
+                                        <img class="responsive" src="feature-pay.png" alt="feature-pay" />
+                                        <p>
+                                            Zeevou
+                                            <br />
+                                            <b>Pay</b>
+                                        </p>
+                                    </td>
+                                    <td align="center">
+                                        <img class="responsive" src="feature-cal.png" alt="feature-cal" />
+                                        <p>
+                                            Zeevou
+                                            <br />
+                                            <b>Cal</b>
+                                        </p>
+                                    </td>
+                                    <td align="center" class="w50">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
 
-                        <div class="dots">
+                            <div class="dots">
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
-                        </div>
-                        <a href="" class="btn">Check out all features</a>
-                    </td>
+                            </div>
+                            <a href="" class="btn">Check out all features</a>
+                        </td>
 
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">
-                        <h3>5+ Properties</h3>
-                        <p>
-                                Put 5 or more properties under Zeevou's management umbrella and get 20% OFF in the merriest time of the year! One of the dedicated members of Zeevou Soul will guide you through all Zeevou has to offer. 
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="divider" colspan="4">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w325">
+                            <h3>5+ Properties</h3>
+                            <p>
+                                Put 5 or more properties under Zeevou's management umbrella and get 20% OFF in the
+                                merriest time of the year! One of the dedicated members of Zeevou Soul will guide you
+                                through all Zeevou has to offer.
                                 Wait and see for yourself!
-                        </p>
-                        <a href="" class="btn">REQUEST A DEMO</a>
-                        
-                    </td>
-                    <td class="w325">
-                            <img class="responsive" src="plus5.png" alt="plus5"/>
-                    </td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">
-                            <img class="responsive" src="limited.png" alt="limited"/>
-                    </td>
-                    <td class="w325">
-                        <h3>Limited Time</h3>
-                        <p>
-                                Reach out to us from 15th to 31st December, go on a comprehensive tour of all Zeevou's features and enjoy 20% OFF for your +5 properties for 3 months!
-                                Celebrate Christmas and The New Year with a customized solution for your hospitality management needs.
-                        </p>
-                        <a href="" class="btn">REQUEST A DEMO</a>
-                    </td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w325">&nbsp;</td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <tr class="background-cyan text-white">
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w650" colspan="2">
-                        <p>
-                                We have collected and processed your email address on the basis of legitimate interest. Given how beneficial Zeevou's products and services have been for hospitality businesses, we believe our offering to be of benefit to you. Your email address is the only data we hold. As per your rights, we will delete this from our database if you are not interested in our services or simply wish us to do so. Your data is not being held in any other database. To opt out, please <a href="#">click this link</a>.
-                        </p>
-                    </td>
+                            </p>
+                            <a href="" class="btn">REQUEST A DEMO</a>
 
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
+                        </td>
+                        <td class="w325">
+                            <img class="responsive" src="plus5.png" alt="plus5" />
+                        </td>
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
 
-                 <!--footer-->
-                <tr class="background-purple text-white">
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w650" colspan="2" align="center">
+                    <tr>
+                        <td class="divider" colspan="4">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w325">
+                            <img class="responsive" src="limited.png" alt="limited" />
+                        </td>
+                        <td class="w325">
+                            <h3>Limited Time</h3>
+                            <p>
+                                Reach out to us from 15th to 31st December, go on a comprehensive tour of all Zeevou's
+                                features and enjoy 20% OFF for your +5 properties for 3 months!
+                                Celebrate Christmas and The New Year with a customized solution for your hospitality
+                                management needs.
+                            </p>
+                            <a href="" class="btn">REQUEST A DEMO</a>
+                        </td>
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="divider" colspan="4">&nbsp;</td>
+                    </tr>
+
+                    <tr class="background-cyan text-white">
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w650" colspan="2">
+                            <p>
+                                We have collected and processed your email address on the basis of legitimate interest.
+                                Given how beneficial Zeevou's products and services have been for hospitality
+                                businesses, we believe our offering to be of benefit to you. Your email address is the
+                                only data we hold. As per your rights, we will delete this from our database if you are
+                                not interested in our services or simply wish us to do so. Your data is not being held
+                                in any other database. To opt out, please <a href="#">click this link</a>.
+                            </p>
+                        </td>
+
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
+
+                    <!--footer-->
+                    <tr class="bg-footer text-white">
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w650" colspan="2" align="center">
                             <h2>zeevou</h2>
                             <h4 class="text-yellow">THE DIRECT BOOKING REVOLUTION</h4>
-                           <p>
-                                Zeevou is an easy to use online platform that automates hospitality management from marketing, to bookings, to operations. One unified hub. We offer the most complete hospitality solution with a high degree of automation to free up as much time as possible for our partners and remove all the hassle involved in running their business.
-                           </p>
-                           <a href="" class="btn">zeevou.com</a>
-                    </td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
+                            <p>
+                                Zeevou is an easy to use online platform that automates hospitality management from
+                                marketing, to bookings, to operations. One unified hub. We offer the most complete
+                                hospitality solution with a high degree of automation to free up as much time as
+                                possible for our partners and remove all the hassle involved in running their business.
+                            </p>
+                            <a href="" class="btn">zeevou.com</a>
+                        </td>
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
 
-               
-                <tr class="background-purple text-white">
-                    <td class="w25 h25">&nbsp;</td>
-                    <td class="w325" valign="middle">
+
+                    <tr class="background-purple text-white">
+                        <td class="w25 h25">&nbsp;</td>
+                        <td class="w325" valign="middle">
                             <a href="https://zeevou.com/" style="color: #bbbcbf;" target="_blank">
                                 <strong>Zeevou&copy;</strong>
                             </a>
                             <span>Copyright 2019 - <a href="">Unsubscribe</a></span>
-                    </td>
-                    <td class="w325" valign="middle">
+                        </td>
+                        <td class="w325" valign="middle">
                             <table class="socicon-table" width="100%" cellpading="0" cellspacing="0" align="center">
-                                    <tr>
-                                        <td>
-                                            <a href="" target="_blank">
-                                                <img class="socicon responsive" src="socicon-gmail.png" alt="google" />
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://instagram.com/zeevou?igshid=rncpuoynaljm" target="_blank">
-                                                <img class="socicon responsive" src="socicon-instagram.png" alt="instagram" />
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://m.facebook.com/zeevou/" target="_blank">
-                                                <img class="socicon responsive" src="socicon-facebook.png" alt="facebook" />
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://twitter.com/zeevou" target="_blank">
-                                                <img class="socicon responsive" src="socicon-twitter.png" alt="twitter" class="responsive" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                    </td>
-                    <td class="w25 h25">&nbsp;</td>
-                </tr>
-                <!--/footer-->
+                                <tr>
+                                    <td>
+                                        <a href="" target="_blank">
+                                            <img class="socicon responsive" src="socicon-gmail.png" alt="google" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://instagram.com/zeevou?igshid=rncpuoynaljm" target="_blank">
+                                            <img class="socicon responsive" src="socicon-instagram.png"
+                                                alt="instagram" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://m.facebook.com/zeevou/" target="_blank">
+                                            <img class="socicon responsive" src="socicon-facebook.png" alt="facebook" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://twitter.com/zeevou" target="_blank">
+                                            <img class="socicon responsive" src="socicon-twitter.png" alt="twitter"
+                                                class="responsive" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="w25 h25">&nbsp;</td>
+                    </tr>
+                    <!--/footer-->
                 </tbody>
             </table>
 
@@ -307,4 +362,5 @@ padding: 10px 30px 10px 30px;
         </div>
     </div>
 </body>
+
 </html>
