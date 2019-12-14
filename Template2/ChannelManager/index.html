@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -12,10 +12,16 @@
                 url('Arial_Rounded_MT.woff') format('woff'),
                 url('Arial_Rounded_MT.ttf') format('truetype');
         }
+		
+		@font-face {
+			font-family: 'Helvetica';
+			src: url('Helvetica.otf') format('otf'), 
+            url('Helvetica-Bold.otf') format('otf');
+		}
 
         body {
             font-family: "Arial_Rounded_MT";
-            /* font-size: 18px; */
+            font-size: 18px;
             background-color: #b3b3b3;
             margin: 0 auto !important;
             padding: 0 !important;
@@ -92,7 +98,7 @@
         .btn {
             color: #ffffff;
             background-color: #fcb515;
-            padding: 10px 30px 10px 30px;
+            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -136,6 +142,42 @@
             color: #bbbcbf;
             text-decoration: none;
         }
+		.responsive-hero{
+			width: 85%;
+			margin-left: 15px;
+			margin-top: 40px;
+		}
+		.text-right{
+			text-align: right;
+		}
+		.responsive-cloud{
+			width: 80%;
+		}
+		#header-title{
+			font-family: 'Helvetica';
+			font-size: 2.5em;
+		}
+		.font-35{
+			font-size: 35px;
+		}
+		.no-margin-top{
+			margin-top: 0px;
+		}
+		.mb-20{
+			margin-bottom:20px;
+		}
+		.mt-20{
+			margin-top: 20px;
+		}
+		.mt-5{
+			margin: 5px 0px 0px;
+		}
+		.content-height{
+			line-height: 1.4;
+		}
+		.font-20{
+			font-size: 20px;
+		}
     </style>
 </head>
 
@@ -156,14 +198,14 @@
                                         <img class="responsive" src="logo.png" alt="logo" />
                                     </a>
                                 </td>
-                                <td>
-                                    <img class="responsive" src="cloud.png" alt="cloud" />
+                                <td valign="middle" class="text-right">
+                                    <img class="responsive-cloud" src="cloud.png" alt="cloud" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <div style="font-size: 1.5em;font-weight: bold;">The Hero</div>
-                                    <div style="font-size: 1.4em; width: 100%;">is back in town... !</div>
+									<h1 id="header-title">The Hero</h1>
+                                    <p class="font-35 no-margin-top mb-20">is back in town... !</p>
 
                                 </td>
                             </tr>
@@ -171,7 +213,7 @@
                     </table>
                 </td>
                 <td class="w325">
-                    <img class="responsive" src="hero.png" alt="hero" />
+                    <img class="responsive-hero" src="hero.png" alt="hero" />
                 </td>
                 <td class="w25 h25">&nbsp;</td>
             </tr>
@@ -185,8 +227,8 @@
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w650" colspan="2" align="center">
 
-                    <h3>Innovative</h3>
-                    <h3>Channel Manager</h3>
+                    <h2>Innovative</h2>
+                    <h2>Channel Manager</h2>
                     <h6>(Integrated with +200 channels)</h6>
                     <br />
                     <table>
@@ -197,7 +239,7 @@
 
                             <td align="center" class="w600">
                                 <a href="https://zeevou.com/blog/category/software/channel-manager/">
-                                    <img class="responsive" src="channel-manager.png" alt="channel-manager" />
+                                    <img class="responsive mt-20" src="channel-manager.png" alt="channel-manager" />
                                 </a>
                             </td>
                             <td align="center" class="w50">
@@ -221,8 +263,8 @@
                     <img class="responsive" src="plus5.png" alt="plus5" />
                 </td>
                 <td class="w325">
-                    <h3>5+ Properties</h3>
-                    <p>
+                    <h2>+5 Properties</h2>
+                    <p class="content-height mt-5">
                         Put 5 or more properties under Zeevou's management umbrella and get 20% OFF in the merriest time
                         of the year! One of the dedicated members of Zeevou Soul will guide you through all Zeevou has
                         to offer.
@@ -240,9 +282,9 @@
             <tr>
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w325">
-                    <h3>Limited Time</h3>
-                    <p>
-                        Reach out to us from 16th to 31st December, go on a comprehensive tour of all Zeevou's features
+                    <h2>Limited Time</h2>
+                    <p class="content-height mt-5">
+                        Reach out to us from 16<sup>th</sup> to 31<sup>st</sup> December, go on a comprehensive tour of all Zeevou's features
                         and enjoy 20% OFF for your +5 properties for 3 months!
                         Celebrate Christmas and The New Year with a customized solution for your hospitality management
                         needs.
@@ -263,13 +305,13 @@
             <tr class="background-cyan text-white">
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w650" colspan="2">
-                    <p class="center">
+                    <p class="center content-height">
                         We have collected and processed your email address on the basis of legitimate interest.
                         Given how beneficial Zeevou's products and services have been for hospitality businesses,
                         we believe our offering to be of benefit to you. Your email address is the only data we hold.
                         As per your rights, we will delete this from our database if you are not interested in our
                         services or simply wish us to do so. Your data is not being held in any other database.
-                        To opt out, please <a href="https://www.zeevou.com/">click this link</a>.
+                        To opt out, please <a class="text-white" href="https://www.zeevou.com/">click this link</a>.
                     </p>
                 </td>
 
@@ -282,13 +324,13 @@
                 <td class="w650" colspan="2" align="center">
                     <div class="zeevou">zeevou</div>
                     <h4 class="text-yellow">THE DIRECT BOOKING REVOLUTION</h4>
-                    <p class="center">
+                    <p class="center content-height">
                         Zeevou is an easy to use online platform that automates hospitality management from
                         marketing, to bookings, to operations. One unified hub. We offer the most complete
                         hospitality solution with a high degree of automation to free up as much time as
                         possible for our partners and remove all the hassle involved in running their business.
                     </p>
-                    <a href="https://www.zeevou.com/" class="btn">zeevou.com</a>
+                    <a href="https://www.zeevou.com/" class="btn mb-20 font-20">zeevou.com</a>
                 </td>
                 <td class="w25 h25">&nbsp;</td>
             </tr>
@@ -299,7 +341,7 @@
                 <td colspan="2">
                     <table width="100%" cellpading="0" cellspacing="0" align="center">
                         <tbody>
-                            <tr>
+                            <tr height="60">
                                 <td style="width: 25%;">
                                     <a href="https://www.zeevou.com/" class="link" target="_blank">
                                         <strong>Zeevou&copy;</strong>
