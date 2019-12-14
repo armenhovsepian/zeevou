@@ -12,6 +12,12 @@
                 url('Arial_Rounded_MT.woff') format('woff'),
                 url('Arial_Rounded_MT.ttf') format('truetype');
         }
+		
+		@font-face {
+			font-family: 'Helvetica';
+			src: url('Helvetica.otf') format('otf'), 
+            url('Helvetica-Bold.otf') format('otf');
+		}
 
         /*https://colorlib.com/etc/email-template/2/index.html*/
         body {
@@ -48,7 +54,6 @@
         .w100 {
             width: 100px;
         }
-
         .w50 {
             width: 50px;
         }
@@ -67,7 +72,11 @@
         }
 
         .table-features td {
-            padding: 5px;
+            padding: 10px;
+        }
+		
+		.table-features td a {
+            font-size: 16px;
         }
 
         .dot {
@@ -81,7 +90,7 @@
         .btn {
             color: #ffffff;
             background-color: #fcb515;
-            padding: 10px 30px 10px 30px;
+            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -170,6 +179,47 @@
             font-size: 6em;
             font-weight: bold;
         }
+		.responsive-hero{
+			width: 85%;
+			margin-left: 15px;
+			margin-top: 40px;
+		}
+		.text-right{
+			text-align: right;
+		}
+		.responsive-cloud{
+			width: 80%;
+		}
+		#header-title{
+			font-family: 'Helvetica';
+		}
+		.font-25{
+			font-size: 25px;
+		}
+		.no-margin-top{
+			margin-top: 0px;
+		}
+		.mb-20{
+			margin-bottom:20px;
+		}
+		.mt-20{
+			margin-top: 20px;
+		}
+		.max-w-550{
+			max-width: 550px;
+		}
+		.mt-5{
+			margin: 5px 0px 0px;
+		}
+		.content-height{
+			line-height: 1.4;
+		}
+		.mt-10{
+			margin-top: 10px;
+		}
+		.font-20{
+			font-size: 20px;
+		}
     </style>
 </head>
 
@@ -189,21 +239,21 @@
                                         <img class="responsive" src="logo.png" alt="logo" />
                                     </a>
                                 </td>
-                                <td>
-                                    <img class="responsive" src="cloud.png" alt="cloud" />
+                                <td valign="middle" class="text-right">
+                                    <img class="responsive-cloud" src="cloud.png" alt="cloud" />
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <h2>The Hero</h2>
-                                    is back in town... !
+                                    <h1 id="header-title">The Hero</h1>
+                                    <p class="font-25 no-margin-top mb-20">is back in town... !</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </td>
                 <td class="w325">
-                    <img class="responsive" src="hero.png" alt="hero" />
+                    <img class="responsive-hero" src="hero.png" alt="hero" />
                 </td>
                 <td class="w25 h25">&nbsp;</td>
             </tr>
@@ -217,18 +267,17 @@
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w650" colspan="2" align="center">
 
-                    <h3>Specialist</h3>
-                    <h3>Property Management System</h3>
+                    <h2>Specialist</h2>
+                    <h2>Property Management System</h2>
                     <br />
-                    <table class="table-features">
+                    <table class="table-features max-w-550">
                         <tr>
 
                             <td align="center">
                                 <a href="https://www.zeevou.com/features/zeevou-book/" target="_blank"
                                     class="link-feature">
                                     <img class="responsive" src="feature-book.png" alt="feature-book" />
-                                    Zeevou
-                                    <br />
+                                    <p class="mt-5">Zeevou</p>
                                     <strong>Book</strong>
                                 </a>
                             </td>
@@ -236,8 +285,7 @@
                                 <a href="https://www.zeevou.com/features/zeevou-channels/" target="_blank"
                                     class="link-feature">
                                     <img class="responsive" src="feature-channel.png" alt="feature-channels" />
-                                    Zeevou
-                                    <br />
+                                    <p class="mt-5">Zeevou</p>
                                     <strong>Channels</strong>
                                 </a>
                             </td>
@@ -246,8 +294,7 @@
                                 <a href="https://www.zeevou.com/features/zeevou-huts/" target="_blank"
                                     class="link-feature">
                                     <img class="responsive" src="feature-huts.png" alt="feature-huts" />
-                                    Zeevou
-                                    <br />
+                                    <p class="mt-5">Zeevou</p>
                                     <strong>Huts</strong>
                                 </a>
                             </td>
@@ -255,8 +302,7 @@
                                 <a href="https://www.zeevou.com/features/zeevou-pay/" target="_blank"
                                     class="link-feature">
                                     <img class="responsive" src="feature-pay.png" alt="feature-pay" />
-                                    Zeevou
-                                    <br />
+                                    <p class="mt-5">Zeevou</p>
                                     <strong>Pay</strong>
                                 </a>
                             </td>
@@ -264,8 +310,7 @@
                                 <a href="https://www.zeevou.com/features/zeevou-cal/" target="_blank"
                                     class="link-feature">
                                     <img class="responsive" src="feature-cal.png" alt="feature-cal" />
-                                    Zeevou
-                                    <br />
+                                    <p class="mt-5">Zeevou</p>
                                     <strong>Cal</strong>
                                 </a>
                             </td>
@@ -278,7 +323,7 @@
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </div>
-                    <a href="https://www.zeevou.com/features/" class="btn" target="_blank">Check out all
+                    <a href="https://www.zeevou.com/features/" class="btn mt-20" target="_blank">Check out all
                         features</a>
                 </td>
 
@@ -292,8 +337,8 @@
             <tr>
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w325">
-                    <h3>5+ Properties</h3>
-                    <p>
+                    <h3>+5 Properties</h3>
+                    <p class="content-height mt-10">
                         Put 5 or more properties under Zeevou's management umbrella and get 20% OFF in the
                         merriest time of the year! One of the dedicated members of Zeevou Soul will guide you
                         through all Zeevou has to offer.
@@ -320,7 +365,7 @@
                 </td>
                 <td class="w325">
                     <h3>Limited Time</h3>
-                    <p>
+                    <p class="content-height mt-10">
                         Reach out to us from 15th to 31st December, go on a comprehensive tour of all Zeevou's
                         features and enjoy 20% OFF for your +5 properties for 3 months!
                         Celebrate Christmas and The New Year with a customized solution for your hospitality
@@ -339,13 +384,13 @@
             <tr class="background-cyan text-white">
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w650" colspan="2">
-                    <p class="center">
+                    <p class="center content-height">
                         We have collected and processed your email address on the basis of legitimate interest.
                         Given how beneficial Zeevou's products and services have been for hospitality
                         businesses, we believe our offering to be of benefit to you. Your email address is the
                         only data we hold. As per your rights, we will delete this from our database if you are
                         not interested in our services or simply wish us to do so. Your data is not being held
-                        in any other database. To opt out, please <a href="https://www.zeevou.com/">click this
+                        in any other database. To opt out, please <a class="text-white" href="https://www.zeevou.com/">click this
                             link</a>.
                     </p>
                 </td>
@@ -359,14 +404,14 @@
                 <td class="w650" colspan="2" align="center">
                     <div class="zeevou">zeevou</div>
                     <h4 class="text-yellow">THE DIRECT BOOKING REVOLUTION</h4>
-                    <p class="center">
+                    <p class="center content-height">
                         Zeevou is an easy to use online platform that automates hospitality management from
                         marketing, to bookings, to operations. One unified hub. We offer the most complete
                         hospitality solution with a high degree of automation to free up as much time as
                         possible for our partners and remove all the hassle involved in running their
                         business.
                     </p>
-                    <a href="https://www.zeevou.com" class="btn">zeevou.com</a>
+                    <a href="https://www.zeevou.com" class="btn mb-20 font-20">zeevou.com</a>
                 </td>
                 <td class="w25 h25">&nbsp;</td>
             </tr>
@@ -377,7 +422,7 @@
                 <td colspan="2">
                     <table width="100%" cellpading="0" cellspacing="0" align="center">
                         <tbody>
-                            <tr>
+                            <tr height="60">
                                 <td style="width: 25%;">
                                     <a href="https://www.zeevou.com/" class="link" target="_blank">
                                         <strong>Zeevou&copy;</strong>
