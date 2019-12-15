@@ -12,7 +12,7 @@
                 url('Arial_Rounded_MT.woff') format('woff'),
                 url('Arial_Rounded_MT.ttf') format('truetype');
         }
-		
+
         @font-face {
             font-family: 'Arial_Rounded_MT_Bold';
             src: url('Arial_Rounded_MT_Bold.eot?#') format('eot'),
@@ -35,7 +35,7 @@
         }
 
 
-        
+
         body {
             font-family: "Arial_Rounded_MT";
             font-size: 18px;
@@ -172,45 +172,79 @@
             color: #bbbcbf;
             text-decoration: none;
         }
-		.responsive-hero{
-			width: 85%;
-			margin-left: 15px;
-			margin-top: 40px;
-		}
-		.text-right{
-			text-align: right;
-		}
-		.responsive-cloud{
-			width: 80%;
-		}
 
-		.font-35{
-			font-size: 35px;
-		}
-		.no-margin-top{
-			margin-top: 0px;
-		}
-		.mb-20{
-			margin-bottom:20px;
-		}
-		.mt-20{
-			margin-top: 20px;
-		}
-		.mt-5{
-			margin: 5px 0px 0px;
-		}
-		.content-height{
-			line-height: 1.4;
-		}
-		.font-20{
-			font-size: 20px;
-		}
+        .responsive-hero {
+            width: 85%;
+            margin-left: 15px;
+            margin-top: 40px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .responsive-cloud {
+            width: 80%;
+        }
+
+        .font-35 {
+            font-size: 35px;
+        }
+
+        .no-margin-top {
+            margin-top: 0px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt-5 {
+            margin: 5px 0px 0px;
+        }
+
+        .content-height {
+            line-height: 1.4;
+        }
+
+        .font-20 {
+            font-size: 20px;
+        }
 
         .nobreak {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        @media (min-width:400px) {
+            body {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width:600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:1000px) {
+            body {
+                /* Never get larger than this */
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
@@ -237,8 +271,9 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-									<div style="font-family: 'Helvetica-Bold'; font-size: 1.5em;">The Hero</div>
-                                    <div style="font-family: 'Helvetica'; font-size: 1.5em;" class="no-margin-top mb-20 nobreak">is back in town... !</div>
+                                    <div style="font-family: 'Helvetica-Bold'; font-size: 1.5em;">The Hero</div>
+                                    <div style="font-family: 'Helvetica'; font-size: 1.5em;"
+                                        class="no-margin-top mb-20 nobreak">is back in town... !</div>
                                 </td>
                             </tr>
                         </tbody>
@@ -316,7 +351,8 @@
                 <td class="w325">
                     <h2>Limited Time</h2>
                     <p class="content-height mt-5" style="font-family: Arial_Rounded_MT_Bold;">
-                        Reach out to us from 16<sup>th</sup> to 31<sup>st</sup> December, go on a comprehensive tour of all Zeevou's features
+                        Reach out to us from 16<sup>th</sup> to 31<sup>st</sup> December, go on a comprehensive tour of
+                        all Zeevou's features
                         and enjoy 20% OFF for your +5 properties for 3 months!
                         Celebrate Christmas and The New Year with a customized solution for your hospitality management
                         needs.
@@ -333,7 +369,7 @@
             <tr>
                 <td class="divider" colspan="4">&nbsp;</td>
             </tr>
-            
+
             <tr class="background-cyan text-white">
                 <td class="w25 h25">&nbsp;</td>
                 <td class="w650" colspan="2">
@@ -361,12 +397,12 @@
                             </tr>
                             <tr>
                                 <td width="25%"></td>
-                                <td width="50%"><img class="responsive" src="zeevou.png" alt="zeevou"/></td>
+                                <td width="50%"><img class="responsive" src="zeevou.png" alt="zeevou" /></td>
                                 <td width="25%"></td>
                             </tr>
                         </tbody>
                     </table>
-                    
+
                     <!-- <div class="zeevou">zeevou</div>
                     <h4 class="text-yellow">THE DIRECT BOOKING REVOLUTION!</h4> -->
                     <p class="center content-height">
